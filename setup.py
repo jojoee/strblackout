@@ -7,10 +7,12 @@ HERE = pathlib.Path(__file__).parent
 # The text of the README file
 README = (HERE / "README.md").read_text()
 
+__version__ = "0.0.0"
+
 # This call to setup() does all the work
 setup(
     name="strblackout",
-    version="0.0.1",
+    version=__version__,
     description="Blackout the string (str)",
     long_description=README,
     long_description_content_type="text/markdown",
